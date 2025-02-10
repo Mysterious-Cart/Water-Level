@@ -5,8 +5,6 @@
 const double Object_Radius = 3.35; // radius of your container
 const double Object_Height  = 8.5; // height of your container
 
-const int radarOffet = -30;
-
 double distance;
 
 double waterHeight;
@@ -53,6 +51,7 @@ void setup()
 
 void WaterMeasurementMode(){
   GetWaterVolume(); // Get water volume also include get water height
+  GetWaterHeightPercentage();
   Serial.print(waterHeightPercentage);
   Serial.print(":");
   Serial.print(waterHeight);
